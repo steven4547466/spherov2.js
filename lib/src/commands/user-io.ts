@@ -16,6 +16,11 @@ export default (generator: CommandGenerator) => {
         commandId: UserIOCommandIds.allLEDs,
         payload,
       }),
+    allLEDsRawV21: (payload: number[]): ICommandWithRaw =>
+      encode({
+        commandId: UserIOCommandIds.allLEDsV21,
+        payload,
+      }),
     setBackLedIntensity: (i: number): ICommandWithRaw =>
       encode({
         commandId: UserIOCommandIds.allLEDs,
